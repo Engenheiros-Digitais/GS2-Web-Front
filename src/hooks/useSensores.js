@@ -10,13 +10,13 @@ function comEstado(lista) {
 
 // Hook customizado: busca os sensores e atualiza a cada 5 segundos
 function useSensores() {
-  const [sensores, setSensores] = useState(comEstado(SENSORES));
-  const [erro, setErro] = useState('');
+const [sensores, setSensores] = useState(comEstado(SENSORES));
+const [erro, setErro] = useState('');
 
-  useEffect(() => {
+useEffect(() => {
     function atualizar() {
       // Sem API configurada: simula 1 minuto de chuva
-      if (!API_CONFIGURADA) {
+    if (!API_CONFIGURADA) {
         setSensores((atuais) => comEstado(atuais.map(simularMinuto)));
         return;
       }
