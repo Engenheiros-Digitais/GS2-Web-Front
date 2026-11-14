@@ -1,4 +1,3 @@
-// Resumo da lateral do mapa (quando nada está selecionado)
 function PainelVisaoGeral({ sensores, relatos }) {
   function contar(estado) {
     return sensores.filter((sensor) => sensor.estadoTrecho === estado).length;

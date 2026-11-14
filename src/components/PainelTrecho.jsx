@@ -3,7 +3,7 @@ import StatusBadge from './StatusBadge';
 import { ESTADOS, calcularPercentual } from '../services/estados';
 import { ACOES } from '../services/acoes';
 
-// Detalhe do trecho com a orientação para cada perfil
+
 function PainelTrecho({ sensor, relatos }) {
   const [perfil, setPerfil] = useState('Morador');
   const estado = sensor.estadoTrecho;

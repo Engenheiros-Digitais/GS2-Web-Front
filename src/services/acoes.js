@@ -1,4 +1,3 @@
-// O que fazer em cada estado, para cada perfil
 export const ACOES = {
   Morador: {
     normal: 'Acompanhe o mapa se a chuva aumentar.',
@@ -23,7 +22,6 @@ export const ACOES = {
   },
 };
 
-// Texto da placa instalada na rua
 export const PLACAS = {
   normal: 'SEM ALERTA. Córrego monitorado. Fique atento à chuva.',
   atencao: 'ATENÇÃO. Água subindo. Evite a beira do córrego e esteja pronto para sair.',

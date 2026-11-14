@@ -15,7 +15,6 @@ function Mapa() {
   const [filtro, setFiltro] = useState('todos');
   const [selecionado, setSelecionado] = useState(null);
 
-  // Estado de cada trecho (inclui "relatado por moradores")
   const sensores = lista.map((sensor) => ({ ...sensor, estadoTrecho: estadoDoTrecho(sensor, relatos) }));
   const sensor = selecionado ? sensores.find((s) => s.id === selecionado.id) : null;
 

@@ -1,6 +1,6 @@
 import { ESTADOS } from '../services/estados';
 
-// Barra de filtros do mapa
+
 function FiltroMapa({ filtro, setFiltro }) {
   const opcoes = ['todos', ...Object.keys(ESTADOS)];
 

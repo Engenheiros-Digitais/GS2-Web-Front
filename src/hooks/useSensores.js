@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { API_URL, API_CONFIGURADA } from '../services/api';
+import { API_URL, SENSORES_DA_API } from '../services/api';
 import { SENSORES, simularMinuto } from '../services/sensoresSimulados';
 import { classificarEstado } from '../services/estados';
 
@@ -16,7 +16,7 @@ const [erro, setErro] = useState('');
 useEffect(() => {
     function atualizar() {
       // Sem API configurada: simula 1 minuto de chuva
-    if (!API_CONFIGURADA) {
+    if (!SENSORES_DA_API) {
         setSensores((atuais) => comEstado(atuais.map(simularMinuto)));
         return;
       }

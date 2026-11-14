@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ESTADOS } from '../services/estados';
 import { PLACAS } from '../services/acoes';
 
-// Simulação da placa instalada na rua, para cada estado
 function PlacaRua() {
   const [estado, setEstado] = useState('atencao');
   const cor = ESTADOS[estado].cor;

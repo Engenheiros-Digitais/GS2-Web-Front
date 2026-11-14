@@ -15,7 +15,6 @@ function App() {
           <Route path="/plataforma" element={<Plataforma />} />
           <Route path="/relatos" element={<Relatos />} />
 
-          {/* Qualquer outra rota volta para o mapa */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

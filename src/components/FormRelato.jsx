@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { SENSORES } from '../services/sensoresSimulados';
 
-// Formulário de relato (criar ou editar). Não pede nome nem telefone (LGPD).
 function FormRelato({ relatoInicial, onSalvar, onCancelar }) {
   const [sensorId, setSensorId] = useState(relatoInicial ? relatoInicial.sensorId : '');
   const [descricao, setDescricao] = useState(relatoInicial ? relatoInicial.descricao : '');

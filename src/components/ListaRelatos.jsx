@@ -1,4 +1,3 @@
-// Lista de relatos com os botões de editar e apagar
 function ListaRelatos({ relatos, onEditar, onApagar }) {
   if (relatos.length === 0) {
     return <p className="text-gray-600">Nenhum relato registrado ainda.</p>;

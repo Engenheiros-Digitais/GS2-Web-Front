@@ -1,6 +1,3 @@
-// Sensores simulados (nenhum sensor real é instalado).
-// Coordenadas APROXIMADAS: conferir no mapa e ajustar antes da entrega.
-// Cota, área, coeficiente e capacidade da drenagem são valores de exemplo.
 export const SENSORES = [
   {
     id: 'MV-01', corrego: 'Moinho Velho', rua: 'Rua das Juntas Provisórias',
@@ -39,7 +36,6 @@ export const SENSORES = [
   },
 ];
 
-// Simula 1 minuto: a chuva muda um pouco e o nível sobe ou desce
 export function simularMinuto(sensor) {
   const chuva = Math.max(0, Math.min(80, sensor.chuvaMmH + Math.round(Math.random() * 20 - 10)));
   const velocidade = chuva / 10 - 2;

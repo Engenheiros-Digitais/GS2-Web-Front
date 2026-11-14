@@ -1,6 +1,5 @@
 import { ESTADOS } from '../services/estados';
 
-// Selo do estado: texto sempre junto da cor
 function StatusBadge({ estado }) {
   const info = ESTADOS[estado];
   return (
